@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="formulario.css">
+</head>
+<body>
+    <form action="" method="post">
+        <div class="datos_personales">
+            <fieldset>
+            <legend>Datos Personales</legend>
+            <div>
+            <div>
+                <label for="fdni">DNI:</label>
+                <input type="text" id="fdni" name="fdni">
+            </div>
+            <div>
+                <label for="fnombre">Nombre:</label>
+                <input type="text" id="fdni" name="fdni">
+            </div>
+            <div>
+                <label for="fapellido">Apellido:</label>
+                <input type="text" id="fdni" name="fdni">
+            </div>
+            </div>
+            <div>
+                <label for="fsexo">Sexo:</label>
+                <input type="radio" id="fsexo" name="fsexo" value="">
+                <label for="mujer">Mujer</label>
+                <input type="radio" id="fsexo" name="fsexo" value="">
+                <label for="hombre">Hombre</label>
+            </div>
+        </fieldset>
+        </div>
+        <br>
+        <div class="Direccion">
+            <fieldset>
+                <legend>Direccion</legend>
+            <div>
+                <label for="fdirec">Calle/Avda.:</label>
+                <input type="text" id="fdirec" name="fdirec">
+            </div>
+            <div>
+                <label for="fpobla">Poblacion:</label>
+                <input type="text" id="fdirec" name="fdirec">
+            </div>
+            <div>
+                <label for="fprovincia">Provincia</label>
+                <select name="provincia" id="provincia-select">
+                    <option value="Málaga">Málaga</option>
+                    <option value="Alemería">Alemería</option>
+                    <option value="Sevilla">Sevilla</option>
+                    <option value="Granada">Granada</option>
+                    <option value="Cordoba">Cordoba</option>
+                </select>
+            </div>
+        </fieldset>
+        </div>
+        <br>
+        <div class="Practica_en_grupo">
+            <fieldset>
+                <legend>Practica en grupo</legend>
+                <div>
+                    <label for="farchivo">Archivo:</label>
+                    <input type="text" name="farchivo" id="farchivo">
+                    <input type=file  id=choose>
+                    <div>
+                        <input type="checkbox">
+                        <label for="farchivo_comprimido">Archivo Comprimido</label>
+                        <input type="checkbox">
+                        <label for="farchivo_encriptadao">Archivo Encriptado</label>
+                    </div>
+                </div>
+                <div>
+                    <label for="fdescripcion">Descripcion de la practica</label>
+                    <br>
+                    <textarea name="fdescripcion" id="fdescripcion" rows="8" cols="100"></textarea>
+                </div>
+            </fieldset>
+        </div>
+        <button>Submit Query</button>
+    </form>
+</body>
+</html>
