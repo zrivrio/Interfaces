@@ -1,77 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="formulario.css">
 </head>
+
 <body>
-    <form action="" method="post">
-            <fieldset>
-            <legend>Datos Personales</legend>
-            <div  class="datos_personales">
-            <div class="dna">
-                <div>
-                <label for="fdni">DNI:</label>
-                <input type="text" id="fdni" name="fdni" size="20">
+    <form action="" method="">
+        <fieldset>
+            <legend><b>Datos Personales</b></legend>
+            <div class="datos_personales">
+                <div class="dna">
+                    <div>
+                        <label for="fdni"><b>DNI:</b></label>
+                        <input type="text" id="fdni" name="fdni" size="20">
+                    </div>
+                    <div>
+                        <label for="fnombre"><b>Nombre:</b></label>
+                        <input type="text" id="fdni" name="fdni" size="30">
+                    </div>
+                    <div>
+                        <label for="fapellido"><b>Apellido:</b></label>
+                        <input type="text" id="fdni" name="fdni" size="60">
+                    </div>
                 </div>
-                <div>
-                <label for="fnombre">Nombre:</label>
-                <input type="text" id="fdni" name="fdni" size="30">
+                <div class="s">
+                    <label for="fsexo"><b>Sexo:</b></label>
+                    <div>
+                        <input type="radio" id="fsexo" name="fsexo" value="">
+                        <label for="mujer">Mujer</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="fsexo" name="fsexo" value="">
+                        <label for="hombre">Hombre</label>
+                    </div>
                 </div>
-                <div>
-                <label for="fapellido">Apellido:</label>
-                <input type="text" id="fdni" name="fdni" size="60">
             </div>
-            </div>
-            <div class="s">
-                <label for="fsexo">Sexo:</label>
-                <div>
-                <input type="radio" id="fsexo" name="fsexo" value="">
-                <label for="mujer">Mujer</label>
-                </div>
-                <div>
-                <input type="radio" id="fsexo" name="fsexo" value="">
-                <label for="hombre">Hombre</label>
-                </div>
-            </div>
-        </div>
         </fieldset>
         <br>
         <fieldset>
-            <legend>Direccion</legend>
+            <legend><b>Direccion</b></legend>
             <div class="d">
-            <div>
-                <label for="fdirec">Calle/Avda.:</label>
-                <input type="text" id="fdirec" name="fdirec" size="70">
+                <div>
+                    <label for="fdirec"><b>Calle/Avda.:</b></label>
+                    <input type="text" id="fdirec" name="fdirec" size="70">
+                </div>
+                <div class="pp">
+                    <div>
+                        <label for="fpobla"><b>Poblacion:</b></label>
+                        <input type="text" id="fdirec" name="fdirec" size="70">
+                    </div>
+                    <blockquote></blockquote>
+                    <div>
+                        <label for="fprovincia"><b>Provincia</b></label>
+                        <select name="provincia" id="provincia-select">
+                            <option value="Málaga">Málaga</option>
+                            <option value="Alemería">Alemería</option>
+                            <option value="Sevilla">Sevilla</option>
+                            <option value="Granada">Granada</option>
+                            <option value="Cordoba">Cordoba</option>
+                        </select>
+                    </div>
+                </div>
             </div>
-            <div class="pp">
-            <div>
-                <label for="fpobla">Poblacion:</label>
-                <input type="text" id="fdirec" name="fdirec" size="70">
-            </div>
-            <div>
-                <label for="fprovincia">Provincia</label>
-                <select name="provincia" id="provincia-select">
-                    <option value="Málaga">Málaga</option>
-                    <option value="Alemería">Alemería</option>
-                    <option value="Sevilla">Sevilla</option>
-                    <option value="Granada">Granada</option>
-                    <option value="Cordoba">Cordoba</option>
-                </select>
-            </div>
-        </div>
-        </div>
         </fieldset>
         <br>
         <div class="Practica_en_grupo">
             <fieldset>
-                <legend>Practica en grupo</legend>
+                <legend><b>Practica en grupo</b></legend>
                 <div>
-                    <label for="farchivo">Archivo:</label>
-                    <input type="text" name="farchivo" id="farchivo">
-                    <input type=file  id=choose>
+                    <label for="farchivo"><b>Archivo:</b></label>
+                    <input type="text" size="70">
+                    <input hidden id="btn" class="form-control text-center col-md-6" onChange="document.getElementById('tagsmall').innerText=document.getElementById('btn').files[0]['name'];" type="file" value="Archivo">
+                    <button id="personalizado" onClick="document.getElementById('btn').click();">Browse</button>
+                    <small id='tagsmall'></small>
                     <div>
                         <input type="checkbox">
                         <label for="farchivo_comprimido">Archivo Comprimido</label>
@@ -80,13 +85,16 @@
                     </div>
                 </div>
                 <div>
-                    <label for="fdescripcion">Descripcion de la practica</label>
                     <br>
+                    <label for="fdescripcion"> <b>Descripcion de la practica</b></label>
                     <textarea name="fdescripcion" id="fdescripcion" rows="8" cols="100"></textarea>
                 </div>
             </fieldset>
         </div>
-        <button>Submit Query</button>
+        <div class="b">
+            <input type="submit" value="Submit Query">
+        </div>
     </form>
 </body>
+
 </html>
