@@ -1,0 +1,21 @@
+.datos_personales{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+}
+.dna{
+    display: flex;
+    flex-direction: column;
+}
+.s{
+    display: flex;
+    flex-direction: column;
+}
+.d{
+    display: flex;
+  flex-direction: column;
+  justify-content:space-around;
+}
+.pp{
+    display: flex;
+}

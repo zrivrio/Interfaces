@@ -8,43 +8,48 @@
 </head>
 <body>
     <form action="" method="post">
-        <div class="datos_personales">
             <fieldset>
             <legend>Datos Personales</legend>
-            <div>
-            <div>
+            <div  class="datos_personales">
+            <div class="dna">
+                <div>
                 <label for="fdni">DNI:</label>
-                <input type="text" id="fdni" name="fdni">
-            </div>
-            <div>
+                <input type="text" id="fdni" name="fdni" size="20">
+                </div>
+                <div>
                 <label for="fnombre">Nombre:</label>
-                <input type="text" id="fdni" name="fdni">
-            </div>
-            <div>
+                <input type="text" id="fdni" name="fdni" size="30">
+                </div>
+                <div>
                 <label for="fapellido">Apellido:</label>
-                <input type="text" id="fdni" name="fdni">
+                <input type="text" id="fdni" name="fdni" size="60">
             </div>
             </div>
-            <div>
+            <div class="s">
                 <label for="fsexo">Sexo:</label>
+                <div>
                 <input type="radio" id="fsexo" name="fsexo" value="">
                 <label for="mujer">Mujer</label>
+                </div>
+                <div>
                 <input type="radio" id="fsexo" name="fsexo" value="">
                 <label for="hombre">Hombre</label>
+                </div>
             </div>
-        </fieldset>
         </div>
+        </fieldset>
         <br>
-        <div class="Direccion">
-            <fieldset>
-                <legend>Direccion</legend>
+        <fieldset>
+            <legend>Direccion</legend>
+            <div class="d">
             <div>
                 <label for="fdirec">Calle/Avda.:</label>
-                <input type="text" id="fdirec" name="fdirec">
+                <input type="text" id="fdirec" name="fdirec" size="70">
             </div>
+            <div class="pp">
             <div>
                 <label for="fpobla">Poblacion:</label>
-                <input type="text" id="fdirec" name="fdirec">
+                <input type="text" id="fdirec" name="fdirec" size="70">
             </div>
             <div>
                 <label for="fprovincia">Provincia</label>
@@ -56,8 +61,9 @@
                     <option value="Cordoba">Cordoba</option>
                 </select>
             </div>
-        </fieldset>
         </div>
+        </div>
+        </fieldset>
         <br>
         <div class="Practica_en_grupo">
             <fieldset>
