@@ -1,0 +1,24 @@
+.ex_alhambra{
+    width: 1200px;
+    height: 500px;
+}
+.enlaces{
+    font-size: 19px;
+    font-weight: bolder;
+}
+.lista{
+    list-style-type: circle
+}
+.imagen{
+    display: flex;
+    justify-content: space-around;
+}
+table, th , tr, td{
+    border: 1px solid;
+    
+}
+.ta_tx p{
+    margin-bottom: 0px;
+    margin-left: 400px;
+
+}
