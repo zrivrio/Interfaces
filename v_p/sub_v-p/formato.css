@@ -1,0 +1,60 @@
+/*<-- CABECERA -->*/
+header{
+    display: flex;
+    justify-content: space-around;
+
+    align-content: center;
+}
+.logo{
+    width: 150px;
+}
+.buscador{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.buscador a{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+/*<-- BODY -->*/
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.texto_inicio{
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(255, 187, 223);
+}
+.texto_inicio div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.texto_inicio h1{
+    margin-bottom: 0px;
+}
+.portada_inicio{
+    width: 250px;
+    height: 400px;
+}
+.apartados{
+    display: flex;
+    justify-content: center;
+}
+.tabla_contenido{
+    display: flex;
+    justify-content: center;
+}
+.portada{
+    width: 200px;
+    height: 300px;
+}
+/*<-- FOOTER -->*/
+
+footer{
+    display: flex;
+    justify-content: space-around;
+}
