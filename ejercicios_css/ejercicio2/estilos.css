@@ -1,0 +1,36 @@
+body {
+    font-family: Arial, sans-serif;
+}
+h2 {
+    font-size: 24px;
+}
+.caja {
+    padding: 10px;
+    margin: 10px 0;
+}
+.div_es {
+    background-color: rgb(238, 238, 238);
+    width: 300px;
+    border: 1px solid red;
+}
+.p_es {
+    width: 300px;
+    border: 1px dashed green;
+}
+.otro_div {
+    background-color: #f5f1f1;
+    margin-left: 600px;
+    width: 300px;
+    border: 1px dotted gray;
+}
+.spans {
+    margin-top: 20px;
+}
+.spans span {
+    background-color: rgb(167, 167, 167);
+    border: 1px solid black;
+    color: white ;
+    padding: 5px;
+    margin-right: 5px;
+    display: inline-block;
+}

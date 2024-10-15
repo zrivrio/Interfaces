@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+
+h2 {
+    color: red;
+    border-bottom: 3px solid red;
+    padding-bottom: 5px;
+}
+
+
+.form-container {
+    border: 2px dashed red;
+    padding: 5px;
+    width: 300px;
+    margin-top: 20px;
+}
+label {
+    color: red;  
+}
+
+
+input[type="text"], input[type="password"], textarea {
+    width: 60%;
+    padding: 5px;
+    margin-top: 5px;
+    border: 1px dashed red;
+}
+
+
+.checkbox-group, .radio-group {
+    margin: 10px 0;
+    display: flex;
+}
+
+
+.checkbox-group label, .radio-group label {
+    display: inline-block;
+}
+
+
+.buttons {
+    margin-top: 15px;
+}
+
+
+.buttons input {
+    border: 1px dashed red;
+    color: green;
+    padding: 5px 10px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+.centrar1{
+    margin-top: 40px;
+}
+.centrar2{
+    margin-top: 10px;
+}

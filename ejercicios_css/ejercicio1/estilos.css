@@ -1,0 +1,31 @@
+header{
+    background-color: red;
+    height: 250px;
+}
+.cuerpo{
+    border: 1px black dashed;
+}
+.prin{
+    margin: 0;
+}
+.seg_lis{
+    padding: 20px 40px;
+    border: 1px solid;
+    border-left: 0px;
+    border-right: 0px;
+    margin-bottom: 10px;
+
+}
+.seg_lis li{
+    background-color: green;
+    color: white;
+    border: 1px black solid;
+    margin-right: 5px;
+    display: inline-block;
+
+}
+footer{
+    background-color: rgb(168, 229, 240);
+    border: 1px blue solid;
+    height: 50px;
+}
