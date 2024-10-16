@@ -7,26 +7,27 @@
     <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
+
     <h2>Estilos CSS para formularios</h2>
     <hr>
     <div class="form-container">
         <form action="#" method="POST">
-            <label for="login">Login:</label>
-            <input type="text" id="login" name="login">
+            <div style="margin-left: center;">
+                <label style="margin-right: 42px;" for="login">Login:</label>
+                <input type="text" id="login" size="10" name="login">
 
+                <label style="margin-right: 12px;vertical-align: middle" for="password">Password:</label>
+                <input type="password" id="password" size="10" name="password">
 
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password">
-
-
-            <label for="descripcion">Descripción:</label>
-            <textarea id="descripcion" name="descripcion" rows="2">Contenido inicial...</textarea>
-
+                <label for="descripcion">Descripción:</label>
+                <textarea id="descripcion" style="color: green;" name="descripcion"
+                    rows="2">Contenido inicial...</textarea>
+            </div>
 
             <div class="checkbox-group">
                 <label class="centrar1">Posesiones:</label>
                 <div>
-                    <input type="checkbox" id="casa" size="10" name="posesiones" value="casa">
+                    <input type="checkbox" id="casa" name="posesiones" value="casa">
                     <label for="casa">Casa</label><br>
                     <input type="checkbox" id="ordenador" name="posesiones" value="ordenador">
                     <label for="ordenador">Ordenador</label><br>
@@ -39,7 +40,6 @@
                 </div>
             </div>
 
-
             <div class="radio-group">
                 <label class="centrar2">SEXO:</label>
                 <div style="padding-left: 35px;">
@@ -50,14 +50,12 @@
                 </div>
             </div>
 
-
             <div class="buttons">
                 <input type="submit" value="Enviar">
                 <input type="reset" value="Vaciar">
             </div>
         </form>
     </div>
-
 
 </body>
 </html>
