@@ -1,0 +1,36 @@
+body{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.contenedor {
+    width: 180px;
+    height: 180px;
+    background-color: #8E24AA; 
+    color: white;
+    font-size: 16px; 
+    line-height: 1.6; 
+    border-radius: 20px; 
+    box-shadow: 3px 3px 15px rgba(0, 0, 0, 1); 
+    opacity: 1; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.4s ease;
+}
+
+.contenedor:hover {
+    background-color: #f50057; 
+    color: #3b90ff;
+    font-size: 26px; 
+    line-height: 2.2; 
+    border-radius: 50px; 
+    box-shadow: 6px 6px 30px rgba(0, 0, 0, 0.8); 
+    opacity: 0.85; 
+    transform: scale(1.1); 
+    border: 4px solid #3b90ff; 
+    rotate: 10deg; 
+    filter: brightness(1.0); 
+}

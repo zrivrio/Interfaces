@@ -1,0 +1,24 @@
+body {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin-top: 50px;
+    background-color: #e3f2fd; 
+}
+
+.contenedor {
+    width: 180px;
+    height: 180px;
+    background-color: #3F51B5; 
+    color: white; 
+    font-size: 20px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.4s ease; 
+    border-radius: 10px; 
+}
+
+.contenedor:hover {
+    transform: scale(1.1) rotate(10deg) translate(10px, 10px) skew(10deg, 5deg); /* Transformaciones al pasar el ratón */
+}

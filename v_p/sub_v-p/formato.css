@@ -24,11 +24,16 @@ body{
     padding: 0px;
 }
 
-.texto_inicio{
+.texto_inicio {
     display: flex;
     justify-content: space-around;
-    background-color: rgb(255, 187, 223);
+    background: linear-gradient(to top, #cd63a1, #d586c8, #f1a7d5);
+    padding: 20px; 
+    border-radius: 10px; 
+    color: white; 
 }
+
+
 .texto_inicio div{
     display: flex;
     flex-direction: column;
@@ -45,7 +50,18 @@ body{
 .apartados{
     display: flex;
     justify-content: center;
+    position: relative;
+    opacity: 0;
+    transform: translateX(100px); 
+    animation: slide-in 1s forwards;
 }
+@keyframes slide-in {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
 .tabla_contenido{
     display: flex;
     justify-content: center;
