@@ -1,0 +1,100 @@
+/* Estilos generales */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    margin: 0;
+}
+
+h2 {
+    margin: 0;
+}
+hr{
+    display: none;
+}
+.subcontainer{
+    display: flex;
+
+}
+/* Estilos hasta 600px (una columna) */
+@media (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
+
+    .section {
+        margin-bottom: 20px;
+    }
+
+    .column-list {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    .column-list li {
+        margin-bottom: 10px;
+    }
+    li{
+        display: flex;
+        flex-direction: column;
+    }
+    hr{
+        display: block;
+    }
+    .subcontainer{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/* Estilos entre 600px y 1200px (dos columnas) */
+@media (min-width: 601px) and (max-width: 1200px) {
+    .container {
+        display: flex;
+    }
+    
+    .section {
+        width: 48%; /* Dos columnas */
+        margin: 1%;
+    }
+    
+    .column-list {
+        list-style-type: none;
+        padding: 0;
+    }
+    .subrayado strong{
+        text-decoration: underline;
+    }
+    .primera li{
+        display: flex;
+        flex-direction: column;
+    }
+    .subcontainer{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/* Estilos a partir de 1200px (tres columnas) */
+@media (min-width: 1201px) {
+    .container {
+        display: flex;
+    }
+
+    .section {
+        width: 31%; /* Tres columnas */
+        margin: 1%;
+    }
+
+    .column-list {
+        padding: 0;
+    }
+}
+
+/* Estilos adicionales */
+.morado strong {
+    color: purple; /* Ejemplo de uso de selectores */
+}

@@ -1,0 +1,49 @@
+.card {
+    width: 300px;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px;
+  }
+  
+  .card-shadow {
+    border: 1px solid gray;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .card-gradient {
+    background: linear-gradient(to bottom, #3498db, #1f587d);
+    color: white;
+  }
+  
+  .filtered-image {
+    filter: brightness(80%) contrast(120%);
+  }
+  
+  .tooltip-container {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  .tooltip-text {
+    visibility: hidden;
+    width: 120px;
+    background-color: brown;
+    color: white;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%; /* Posición del tooltip */
+    left: 50%;
+    transform: translateX(-50%); /* Centrado horizontal */
+    opacity: 0; /* Invisible por defecto */
+    transition: opacity 0.3s; /* Transición suave */
+  }
+  
+  .tooltip-container:hover .tooltip-text {
+    visibility: visible;
+    opacity: 1; /* Visible al pasar el cursor */
+  }
+  
