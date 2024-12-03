@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Mi Blog</title>
+</head>
+<body>
+    <nav class="bg-gray-300 p-4">
+        <div class="flex justify-between items-center">
+            <img src="./logo.png" alt="Logo" class="h-14">
+            <ul class="flex space-x-6 text-white">
+                <li><a href="#" class="hover:text-blue-500">Inicio</a></li>
+                <li><a href="#" class="hover:text-blue-500">Acerca</a></li>
+                <li><a href="#" class="hover:text-blue-500">Contactos</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 p-8">
+        <div class="card border rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition duration-300">
+            <a href="./articulo1.html">
+                <img src="./articulo1.jpg" alt="Articulo 1" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h3 class="text-xl font-bold">Estuches de belleza</h3>
+                    <p class="text-gray-600">La ultima moda los estuches de belleza</p>
+                </div>
+            </a>
+        </div>
+        <div class="card border rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition duration-300">
+            <a href="./articulo1.html">
+                <img src="./articulo2.jpg" alt="Articulo 2" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h3 class="text-xl font-bold">RetinSpahere</h3>
+                    <p class="text-gray-600">Los ultimos tonicos de la cara de la marca RetinSpahere</p>
+                </div>
+            </a>
+        </div>
+        <div class="card border rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition duration-300">
+            <a href="./articulo1.html">
+                <img src="./articulo3.jpg" alt="Articulo 3" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h3 class="text-xl font-bold">Pandora y sus anillos</h3>
+                    <p class="text-gray-600">La nueva tendecia de pandora de crear juegos de anillos</p>
+                </div>
+            </a>
+        </div>
+    </div>
+    
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-4 p-8 sm:grid-cols-1 gap-6">
+            <div>
+                <img src="./logo.png" alt="Logo" class="h-24">
+            </div>
+            <div class="flex flex-col">
+                <a href="#" class="hover:text-red-500">Enlace 1</a>
+                <a href="#" class="hover:text-red-500">Enlace 3</a>
+                <a href="#" class="hover:text-red-500">Enlace 2</a>
+                <a href="#" class="hover:text-red-500">Enlace 4</a>
+              </div>
+              <div class="flex flex-col">
+                <a href="#" class="hover:text-red-500">Enlace 4</a>
+                <a href="#" class="hover:text-red-500">Enlace 5</a>
+                <a href="#" class="hover:text-red-500">Enlace 6</a>
+                <a href="#" class="hover:text-red-500">Enlace 7</a>
+              </div>
+              <div class="flex flex-col">
+                <a href="#" class="hover:text-red-500">Enlace 8</a>
+                <a href="#" class="hover:text-red-500">Enlace 9</a>
+                <a href="#" class="hover:text-red-500">Enlace 10</a>
+                <a href="#" class="hover:text-red-500">Enlace 11</a>
+              </div>
+        </div>
+    </footer>
+
+</body>
+</html>
