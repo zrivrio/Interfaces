@@ -4,27 +4,28 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="./output.css">
 </head>
-<body>
+<body class="flex justify-center bg-[url(./assets/descarga.jpg)] bg-no-repeat bg-cover">
 
-  <form class="bg-red-50">
-    <div class="flex flex-col justify-center align-middle">
-     <input class="border border-yellow-500 hover:border-spacing-2" type="text" name="nombre" id="nombre" placeholder="Nombre">
-     <input type="email" name="correo" id="correo" placeholder="Correo">
-     <input type="password" name="contrasena" id="contrasena" placeholder="contraseña">
-    
-     <div class="flex justify-between">
+  <div  class="bg-white w-1/6 mt-20 rounded-xl">
+    <form class=" p-5">
+      <div class="flex flex-col justify-center align-middle">
+        <input id="nombre" class="border-2 rounded-xl p-2 m-2 border-yellow-400 outline-none focus:border-4" placeholder="Nombre">
+        <input class="border-2 rounded-xl p-2 m-2 border-yellow-400 outline-none focus:border-4" type="email" name="correo" id="correo" placeholder="Correo">
+        <input class="border-2 rounded-xl p-2 m-2 border-yellow-400 outline-none focus:border-4" type="password" name="contrasena" id="contrasena" placeholder="Contraseña">
 
-        <button class="bg-red-500">Entrar</button>
-        <button class="bg-yellow-500">Borrar</button>
-
-     </div>
-    
-    <a href="./nuevosUsuario.html">Nuevo Usuario</a>
-
-    </div>
-  </form>
-
+       <div class="flex justify-around mt-2  m-2">
+  
+          <button class="text-white mr-2 rounded-xl bg-yellow-400  hover:bg-yellow-200 hover:text-black p-2 w-1/2">Entrar</button>
+          <button class="text-white ml-2 rounded-xl bg-yellow-400 hover:bg-yellow-200 hover:text-black  p-2 w-1/2 ">Borrar</button>
+  
+       </div>
+      
+      <a class="text-yellow-400 italic underline decoration-1 decoration-yellow-400 hover:text-blue-400 hover:decoration-blue-400" href="./nuevosUsuario.html">Nuevo Usuario</a>
+  
+      </div>
+    </form>
+  </div>
 </body>
 </html>
