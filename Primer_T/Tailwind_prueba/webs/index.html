@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos Culturales</title>
+    <link rel="stylesheet" href="./output.css">
+</head>
+<body class="bg-light text-dark dark:bg-gray-900 dark:text-white">
+    <nav class="bg-gradient-to-r from-primary to-secundary p-4 shadow-lg">
+        <div class="container mx-auto flex justify-between items-center">
+            <img src="./assets/logo.png" alt="">
+            <ul class="flex space-x-6">
+                <li><a href="#" class="hover:text-accent">Inicio</a></li>
+                <li><a href="eventos" class="hover:text-accent">Eventos</a></li>
+                <li><a href="#" class="hover:text-accent" >Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+    <header class="h-72 bg-gradient-to-r from-primary to-accent text-center flex items-center justify-center">
+        <h1 class="text-4xl font-bold text-light">
+            ¡decubere los Mejores Eventos Culturales!
+        </h1>
+    </header>
+
+    <section id="eventos" class="py-12">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-6">Proximos Eventos</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <a href="evento1.html" class="block bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transition transform">
+                    <img src="#" alt="" class="w-full h-40 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-xl font-bold">Evento 1</h3>
+                        <p class="text-gray-600">Una descripcion breve del evento cultural</p>
+                    </div>
+                </a>
+                <a href="evento1.html" class="block bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transition transform">
+                    <img src="#" alt="" class="w-full h-40 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-xl font-bold">Evento 1</h3>
+                        <p class="text-gray-600">Una descripcion breve del evento cultural</p>
+                    </div>
+                </a>
+                <a href="evento1.html" class="block bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transition transform">
+                    <img src="#" alt="" class="w-full h-40 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-xl font-bold">Evento 1</h3>
+                        <p class="text-gray-600">Una descripcion breve del evento cultural</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+    <div class="bg-light text-dark dark:bg-gray-900 dark:text-white">
+        <div class="flex justify-center items-center h-screen">
+          <!-- Card 1 -->
+          <div class="card">
+            1
+          </div>
+          <!-- Card 2 -->
+          <div class="card">
+            2
+          </div>
+          <!-- Card 3 -->
+          <div class="card">
+            3
+          </div>
+        </div>
+    </div>
+
+    <footer class="bg-gray-800 text-light py-8">
+        <div class="container mx-auto text-center">
+            <img src="./img/logo.png" alt="Logo" class="h-10 mx-auto mb-4">
+            <p>© 2025 Eventos Culturales. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+<script>
+    const darkModeToggle = document.querySelector('#darkmode');
+darkModeToggle.addEventListener('click', () => {
+  document.documentElement.classList.toggle('dark');
+});
+</script>
+</body>
+</html>
