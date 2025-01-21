@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Partituras</title>
-    <link rel="stylesheet" href="./output.css">
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body>
@@ -56,3 +56,49 @@
 </body>
 
 </html>
+
+<body class="min-h-screen bg-gray-100 font-sans">
+
+    <!-- Header -->
+    <header class="bg-gradient-to-r from-azulado to-morado text-white py-4">
+      <nav class="container mx-auto flex justify-between items-center px-4">
+        <div class="logo">
+          <img src="orquidea.png" alt="Logo" class="w-16">
+        </div>
+        <ul class="flex space-x-6">
+          <li><a href="#" class="hover:underline">Inicio</a></li>
+          <li><a href="#" class="hover:underline">Servicios</a></li>
+          <li><a href="#" class="hover:underline">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+  
+    <!-- Main Content -->
+    <main class="container mx-auto p-8 space-y-12">
+      <!-- Hero Section -->
+      <section class="text-center bg-white p-8 rounded shadow-lg">
+        <h1 class="text-3xl font-bold text-morado">Bienvenidos a Nuestra Web</h1>
+        <p class="text-gray-700 mt-4">Texto introductorio sobre los servicios y beneficios de la web.</p>
+        <div class="mt-6">
+          <button class="bg-azulado text-white py-2 px-4 rounded hover:bg-morado transition">Más Información</button>
+        </div>
+      </section>
+  
+      <!-- Search Section -->
+      <section class="flex justify-center">
+        <div class="flex space-x-2">
+          <input type="text" placeholder="Buscar..." class="border border-gray-300 rounded p-2 w-64 focus:outline-azulado">
+          <button class="bg-morado text-white px-4 py-2 rounded hover:bg-azulado transition">🔍</button>
+        </div>
+      </section>
+    </main>
+  
+    <!-- Footer -->
+    <footer class="bg-gradient-to-r from-morado to-azulado text-white py-4">
+      <ul class="flex justify-center space-x-6">
+        <li><a href="#" class="hover:underline">Política de Privacidad</a></li>
+        <li><a href="#" class="hover:underline">Términos de Uso</a></li>
+      </ul>
+    </footer>
+  
+  </body>

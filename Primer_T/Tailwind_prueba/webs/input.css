@@ -3,7 +3,13 @@
 @tailwind utilities;
 
 @layer components {
-    .card {
-        @apply bg-red-500 w-40 h-40 grid place-content-center rounded-lg text-white font-bold border-2 border-red-600 text-4xl;
+    .rectangulo {
+        @apply lg:bg-azulado w-60 h-40 grid place-content-center rounded-lg m-2 lg:text-red-400 font-bold lg:text-4xl border-azulado border-spacing-1
+        pm:bg-morado pm:text-azulado sm:bg-red-300 sm:text-morado pm:text-sm sm:text-2xl pm:border-spacing-3 sm:border-spacing-9 
+        lg:border-2 lg:border-morado  md:border-2 md:border-red-300  pm:border-2 pm:border-azulado;
+      }
+
+      .texto{
+        @apply  lg:text-azulado underline font-bold lg:text-4xl pm:text-sm sm:text-2xl pm:text-morado sm:text-red-300 ;
       }
 }

@@ -5,10 +5,8 @@ module.exports = {
   theme: {    
     extend: {    
       colors:{
-        primary:'#1E40AF',
-        secundary:'#F59E0B',
-        accent:'#F87171',
-        light:'#F3F4F6',
+        azulado:'#1f64e5',
+        morado:'#712c76',
       },
       spacing:{
         72:'18rem',
@@ -16,7 +14,7 @@ module.exports = {
         96:'24rem',
       },
       screens:{
-        tablet:'900px',
+        pm:'500px',
       },
   },  
   },  
