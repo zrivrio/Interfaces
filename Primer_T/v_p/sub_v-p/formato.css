@@ -192,6 +192,16 @@ body{
     text-decoration: none;
     color: white;
 }
+.footer_menu a:hover {
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+}
+
+.footer_menu a {
+    text-decoration: none;
+    color: white;
+}
 
 .footer_redes img {
     height: 15px;
